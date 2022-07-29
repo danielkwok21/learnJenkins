@@ -1,7 +1,6 @@
 var http = require('http');
 
-//create a server object:
 http.createServer(function (req, res) {
-    res.write('Hello World!'); //write a response to the client
-    res.end(); //end the response
-}).listen(4000,(() => console.log(`Ready on http://localhost:4000`))); 
+    res.write('Hello World!');
+    res.end();
+}).listen(4000, (() => console.log(`Ready on http://localhost:4000`))); 
